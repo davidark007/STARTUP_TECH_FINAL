@@ -1,0 +1,529 @@
+/* Importasão da fonte "Poppins" do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ImportaÃ§Ã£o das fontes "Orbitron" e "Poppins" do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* DefiniÃ§Ã£o de variÃ¡veis globais */
+:root {
+    --cor1: #ffffff;
+    /* Define a variÃ¡vel "cor1" como branco */
+    --cor2: #000000;
+    /* Define a variÃ¡vel "cor2" como preto */
+    --cor3: #dcdcdc;
+    /* Define a variÃ¡vel "cor3" como cinza claro */
+}
+
+/* Seletor Universal - Remove estilos padrÃ£o e define comportamento geral */
+* {
+    margin: 0;
+    /* Remove todas as margens padrÃ£o */
+    padding: 0;
+    /* Remove todos os preenchimentos padrÃ£o */
+    box-sizing: border-box;
+    /* Faz com que a largura e altura incluam padding e borda */
+
+    font-family: "Poppins", sans-serif;
+    /* Define a fonte padrÃ£o como "Poppins" */
+    font-weight: 100;
+    /* Define o peso da fonte como 100 (mais fina) */
+    font-style: normal;
+    /* Define o estilo da fonte como normal */
+}
+
+body {
+    background-color: #B5B5B5;
+    /* Define a cor de fundo do corpo como branco */
+}
+
+/* EstilizaÃ§Ã£o do cabeÃ§alho */
+header {
+    display: flex;
+    /* Usa Flexbox para organizaÃ§Ã£o dos elementos */
+    flex-direction: row;
+    /* Alinha os itens do cabeÃ§alho em linha (horizontalmente) */
+    align-items: center;
+    /* Alinha os itens ao centro verticalmente */
+    justify-content: space-around;
+    /* Distribui os itens igualmente no espaÃ§o disponÃ­vel */
+}
+
+/* EstilizaÃ§Ã£o da navegaÃ§Ã£o dentro do cabeÃ§alho */
+#header-nav {
+    display: flex;
+    /* Usa Flexbox */
+    flex-direction: row;
+    /* MantÃ©m os itens da navegaÃ§Ã£o em linha */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    justify-content: space-around;
+    /* Distribui os itens uniformemente */
+    gap: 40px;
+    /* Adiciona um espaÃ§o de 40px entre os itens */
+}
+
+/* EstilizaÃ§Ã£o do logotipo dentro do cabeÃ§alho */
+header img {
+    width: 300px;
+    /* Define a largura da imagem do logotipo como 300px */
+}
+
+/* EstilizaÃ§Ã£o dos links de navegaÃ§Ã£o */
+.header-nav-a {
+    display: flex;
+    /* Usa Flexbox */
+    flex-direction: column;
+    /* Organiza os elementos verticalmente */
+    align-items: center;
+    /* Centraliza os itens */
+    gap: 10px;
+    /* Adiciona um espaÃ§amento de 10px entre os Ã­cones e o texto */
+    color: var(--cor2);
+    /* Define a cor do texto como preto */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    transition: all 1s ease;
+    /* Adiciona uma transiÃ§Ã£o suave de 1s */
+}
+
+/* Efeito ao passar o mouse sobre os links de navegaÃ§Ã£o */
+.header-nav-a:hover {
+    scale: 1.2;
+    /* Aumenta o tamanho do elemento em 20% ao passar o mouse */
+}
+
+/* EstilizaÃ§Ã£o dos Ã­cones da navegaÃ§Ã£o */
+.header-nav-a i {
+    font-size: 40px;
+    /* Define o tamanho dos Ã­cones como 40px */
+}
+
+/* EstilizaÃ§Ã£o do texto dos links de navegaÃ§Ã£o */
+.header-nav-a span {
+    font-size: 24px;
+    /* Define o tamanho da fonte como 24px */
+    font-weight: 500;
+}
+
+/* EstilizaÃ§Ã£o da seÃ§Ã£o de apresentaÃ§Ã£o */
+#apresentacao {
+    display: flex;
+    /* Usa Flexbox */
+    flex-direction: row;
+    /* Organiza os elementos horizontalmente */
+    align-items: start;
+    /* Alinha os elementos ao topo */
+    justify-content: space-between;
+    /* Distribui os itens uniformemente */
+    margin-top: 60px;
+    /* Adiciona um espaÃ§amento superior de 60px */
+    margin-left: 30px;
+    /* Adiciona um espaÃ§amento Ã  esquerda de 30px */
+    margin-right: 30px;
+    /* Adiciona um espaÃ§amento Ã  direita de 30px */
+
+    background-color: var(--cor2);
+    /* Define o fundo da seÃ§Ã£o como preto */
+    color: var(--cor1);
+    /* Define a cor do texto como branco */
+    border-radius: 50px;
+}
+
+/* EstilizaÃ§Ã£o da imagem dentro da seÃ§Ã£o de apresentaÃ§Ã£o */
+#apresentacao img {
+    width: 75%;
+    /* Define a largura da imagem como 75% do container */
+    filter: grayscale(100%);
+    /* Deixa a imagem em preto e branco */
+    transition: all 1s ease;
+    /* Adiciona uma transiÃ§Ã£o suave de 1s */
+    border-radius: 50px;
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+#apresentacao img:hover {
+    filter: grayscale(0%);
+    /* Remove o efeito preto e branco */
+}
+
+/* EstilizaÃ§Ã£o do container de texto dentro da seÃ§Ã£o de apresentaÃ§Ã£o */
+#apresentacao div {
+    width: 25%;
+    /* Define a largura do bloco de texto como 25% do container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 100px solid var(--cor2x);
+    border-radius: 50px;
+}
+
+/* EstilizaÃ§Ã£o do tÃ­tulo dentro da seÃ§Ã£o de apresentaÃ§Ã£o */
+#apresentacao div h2 {
+    font-family: "Orbitron", sans-serif;
+    /* Usa a fonte "Orbitron" */
+    font-optical-sizing: auto;
+    /* Ajusta automaticamente o tamanho Ã³tico da fonte */
+    font-weight: 400;
+    /* Define o peso da fonte como 400 (regular) */
+    font-style: normal;
+    /* Define o estilo da fonte como normal */
+    font-size: 50px;
+    /* Define o tamanho da fonte como 50px */
+    width: 100%;
+    /* Define a largura como total */
+    text-align: center;
+    /* Centraliza o texto */
+    margin: 10px 0 20px 0;
+    /* Adiciona espaÃ§amento superior e inferior */
+}
+
+/* EstilizaÃ§Ã£o do subtÃ­tulo dentro da seÃ§Ã£o de apresentaÃ§Ã£o */
+#apresentacao div h3 {
+    width: 100%;
+    /* Define a largura como total */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 0 40px 30px 40px;
+    /* Adiciona preenchimento interno nos lados e inferior */
+    font-size: 20px;
+    /* Define o tamanho da fonte como 20px */
+    font-weight: 600;
+    /* Define o peso da fonte como 600 (seminegrito) */
+
+}
+
+/* EstilizaÃ§Ã£o dos parÃ¡grafos dentro da seÃ§Ã£o de apresentaÃ§Ã£o */
+#apresentacao div p {
+    margin: 0 20px 20px 20px;
+    /* Adiciona espaÃ§amento ao redor do parÃ¡grafo */
+    font-weight: 450;
+
+
+
+}
+
+/* EstilizaÃ§Ã£o do botÃ£o dentro da seÃ§Ã£o de apresentaÃ§Ã£o */
+#apresentacao div button {
+    margin: 10px;
+    /* Define as margens do botÃ£o */
+    width: 70%;
+    /* Define a largura do botÃ£o como 200px */
+    height: 50px;
+    /* Define a altura do botÃ£o como 50px */
+    background-color: var(--cor2);
+    /* Define a cor de fundo como branco */
+    color: var(--cor1);
+    /* Define a cor do texto como preto */
+    font-size: 20px;
+    /* Define o tamanho da fonte como 20px */
+    font-weight: 600;
+    /* Define o peso da fonte como 600 (seminegrito) */
+    border: 2px solid var(--cor1);
+    /* Adiciona uma borda branca de 2px */
+    border-radius: 10px;
+    /* Arredonda as bordas do botÃ£o */
+    cursor: pointer;
+    /* Muda o cursor ao passar sobre o botÃ£o */
+    transition: all 1s ease;
+    /* Adiciona uma transiÃ§Ã£o suave */
+}
+
+#apresentacao div button:hover {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    border: 5px solid var(--cor2);
+    transition-duration: 1s;
+}
+
+#servicos {
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#servicos h2 {
+    text-shadow: 10px 10px 10px black;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--cor1);
+}
+
+#cards {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    border: 2px solid var(--cor2);
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px black;
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    transition: all 1s ease;
+}
+
+.card:hover {
+    background-color: #696969;
+    color: var(--cor1);
+    transform: translateY(-20px);
+    box-shadow: 15px 15px 15px var(--cor1);
+    color: var(--cor1);
+    filter: grayscale(0%);  
+}
+
+.card img {
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.card h3 {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.card p {
+    margin-top: 20px;
+    font-weight: 500;
+    height: 200px;
+}
+
+.card button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid var(--cor1);
+    border-radius: 5px;
+    background-color: var(--cor2);
+    color: var(--cor1);
+    width: 60%;
+    height: 50px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card button :hover {
+    color: var(--cor1);
+
+}
+
+
+#servicos h2:hover {
+    color: #C6E2FF;
+    transition: all 500ms ease;
+
+}
+
+#apresentacao div h2:hover {
+    color: #C6E2FF;
+    transition: all 500ms ease;
+
+}
+
+#apresentacao div h3:hover {
+    color: #C6E2FF;
+    transition: all 500ms ease;
+
+}
+
+#apresentacao div p:hover {
+    color: #C6E2FF;
+    transition: all 500ms ease;
+
+}
+
+.card img:hover{
+    filter: grayscale(0%);
+
+}
+
+#quemsomos{
+color: var(--cor2);
+display: flex;
+flex-direction: column;
+padding-left: 50px;
+}
+
+#quemsomos h2{
+
+text-align: center;
+margin: 40px 0 40px 0;
+font-size: 80px;
+font-weight: 800;
+text-shadow: 2px 2px 2px var(--cor3);
+}
+
+#listaP{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 100px;
+margin-bottom: 100px;
+}
+
+#listaP a{
+display: flex;
+flex-direction: column;
+text-decoration: none;
+color: var(--cor2);
+align-items: center;
+justify-content: center;
+gap: 5px;
+cursor: pointer;
+filter: grayscale(100%);
+transition: all 1s ease;
+border-bottom: 1px solid transparent;
+}
+
+#listaP a:hover{
+scale: 1.3;
+filter: grayscale(0%);
+border-bottom: 1px solid var(--cor2);
+transform: translateY(-20px);
+}
+
+#listaP a img{
+width: 150px;
+border-radius: 50%;
+border: 2px solid var(--cor2);
+}
+
+#listaP a p{
+font-weight: 400;
+}
+
+.profissionais{
+display: flex;
+flex-direction:row ;
+align-items: center;
+justify-content: center;
+gap: 80px;
+margin-bottom: 100px;
+margin-right: 58px;
+}
+
+.profissional{
+position: relative;
+display: flex;
+flex-direction: column;
+width: 35%  ;
+border-radius: 0 0 0 30px;
+box-shadow: 5px 5px 5px var(--cor3);
+height: 700px;
+border: 1px solid var(--cor2);
+transition: all 1s ease;
+}
+
+.profissional:hover{
+background-color: var(--cor2);
+color: var(--cor1);
+}
+
+.profissional img{
+width: 100%;
+margin-bottom: 20px;
+filter: grayscale(100%);
+}
+
+.profissional img:hover{
+filter: grayscale(50%);
+}
+
+.profissional-texto{
+padding-left: 50px;
+}
+
+.profissional-texto h3{
+font-size: 29px;
+font-weight: 600;
+height: 60px;
+display: flex;  
+align-items: center;
+}
+
+.profissional-texto h4{
+font-size: 22px;
+font-weight: 300;
+font-style: italic;
+height: 60px;
+}
+
+.profissional-texto p{
+font-size: 26px;
+font-weight: 300;
+height: 89px;
+padding-right: 30px;
+margin-top: 20px;
+}
+
+.avaliacao-profissional{
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100px;
+height: 100px;
+background-color: var(--cor1);
+border: 3px solid var(--cor2);
+color: var(--cor2);
+border-radius: 50%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+box-shadow: 2px 2px  5px rgba(0, 0, 0, 0.2);
+z-index: 2;
+transform: translateX(-50px) translateY(-50px);
+transition: 1s all  ease;
+}
+
+.avaliacao-profissional:hover{
+background-color: var(--cor2);
+color: var(--cor1);
+}
+
+.avaliacao-profissional-texto1{
+font-size: 28px;
+font-weight: 800;
+}
+
+.avaliacao-profissional-texto2{
+font-size: 28px;
+font-weight: 800; 
+}
+
+#whatsapp{
+position: fixed;
+top: 85%;
+left: 92%;
+width: 120px;
+height: 120px;
+background-color: var(--cor1) ;
+border: 5px solid var(--cor2);
+color: var(--cor1);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+z-index: 2;
+cursor: pointer;
+}
+
+#whatsapp a {
+text-decoration: none;
+color: var(--cor2);
+font-size: 60px;
+
+}
